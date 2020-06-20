@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jordan Stone's Portfolio</title>
+    <!--Animated Scroll library: https://github.com/michalsnik/aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header id="topOfPage">
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Projects</a>
+                </li>
+                <li>
+                    <a href="#experience" class="nav-link">Experiences</a>
+                </li>
+                <!-- <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li> -->
+            </ul>
+        </nav>
+        <div class="landing-text" id="landing-text">
+            <h1>Jordan Stone</h1>
+            <h6>Undergraduate CS Student at Washington University in St. Louis</h6>
+            <a href="mailto:jordans2299@gmail.com" ><h3 id="emailLink">Email Me</h3></a>
+        </div>
+    </header>
+    <div class="stickyNav" id="stickyNav">
+        <ul class="nav-list">
+            <li>
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li>
+                <a href="#portfolio" class="nav-link">Projects</a>
+            </li>
+            <li>
+                <a href="#experience" class="nav-link">Experiences</a>
+            </li>
+            <!-- <li>
+                <a href="#contact" class="nav-link">Contact</a>
+            </li> -->
+        </ul>
+    </div>
+    <!-- <div class="mainContent"> -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="profile-img">
+                    <img src="images/profilePic.JPG" alt="">
+                </div>
+                <div class="about-details">
+                    <div class="about-heading">
+                        <h1>About</h1>
+                        <h6>Myself</h6>
+                    </div>
+                    <p>
+                        My name is Jordan Stone and I am currently a Junior computer science student
+                        at Washington University in St. Louis. I have strong interest in Full Stack
+                        Web Development with Laravel and Vue being my primary frameworks.
+                        <br>
+                        <br>
+                        Computer Skills:  Java, Python, HTML, PHP, Javascript, MySQL, Laravel, CSS, Vue.js
+                        <br>
+                        <br>
+                        Relevant Courses: Rapid Prototype Development, Web Development, Data Structures and Algorithms, Intro to Data Science,
+                        Matrix Algebra
+                    </p>
+                    <div class="social-media">
+                        <ul class="nav-list">
+                            <li>
+                                <a href="https://www.linkedin.com/in/jordan-stone-051a25142/" class="icon-link">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Jordans2299" class="icon-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="includes/Jordan_Stone_Sophomore_Resume.pdf" class="icon-link">
+                                    <i class="fas fa-file">
+                                    <small>Resume</small>
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <a name="Portfolio" class="pageLink"></a>
+                <div class="section-heading">
+                    <h1>Projects</h1>
+                    <h6>View some of my recent work</h6>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <a href="http://ec2-3-136-161-0.us-east-2.compute.amazonaws.com:3456/"><img src="images/intramuralcs.png" id="weatherImg"></a>
+                    </div>
+                    <div class="portfolio-description" id="weatherDesc">
+                        <h6>Web Development</h6>
+                        <a class="projLink" href="http://ec2-3-136-161-0.us-east-2.compute.amazonaws.com:3456/"><h1>Computer Science Forum Page</h1></a>
+                        <p>
+                            Forum website built for asking CS related questions. 
+                            Supports image uploading, CRUD operations, pagination, and user authentication. It 
+                            also allows for users to sort and search previously created posts. 
+                        </p>
+                        <a href="#" class="cta">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-description" id="calcDesc">
+                        <h6>Web Development</h6>
+                        <a class="projLink" href="http://ec2-3-136-161-0.us-east-2.compute.amazonaws.com/~jcstone/module5/calendar/"><h1>Ajax Calendar</h1></a>
+                        <p>
+                            Makes AJAX request to the server when logging in, signing up, 
+                            loggin out, and editing calendar events to update page in realtime.
+                        </p>
+                        <a href="https://github.com/Jordans2299/Ajax-Calendar" class="cta">View Details</a>
+                    </div>
+                    <div class="portfolio-img">
+                        <a href="http://ec2-3-136-161-0.us-east-2.compute.amazonaws.com/~jcstone/module5/calendar/"><img src="images/calendar.png" id="calImg" alt=""></a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="images/FlappyClone.png" id="flappyImg" alt="#">
+                    </div>
+                    <div class="portfolio-description" id="flappyDesc">
+                        <h6>Java</h6>
+                        <h1>Flappy Bird Game</h1>
+                        <p>
+                            Simple Flappy Bird clone game built using Java
+                        </p>
+                        <a href="#" class="cta">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-description" id="calcDesc">
+                        <h6>App Development</h6>
+                        <h1>Calculator</h1>
+                        <p>
+                            Simple calculator app that supports basic math operations built using
+                            the Flutter Framework and Dart Programing Language
+                        </p>
+                        <a href="" class="cta">View Details</a>
+                    </div>
+                    <div class="portfolio-img">
+                        <img src="images/Calculator.png" id="calcImg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Work Exerience</h1>
+                    <h6>Past and current jobs</h6>
+                </div>
+
+                <div class="timeline">
+                    <ul>
+                        <li class="date" data-date="June-Aug 2017">
+                            <h1>Summer Science Program</h1>
+                            <p>Determined asteroid orbital elements: semi-major axis, inclination, true anomaly, the longitude of ascending node, the argument of perihelion, and eccentricity for the asteroid 20460 Robwiteley using Gaussian method and Python code at the University of Colorado-Boulder.
+                            </p>
+                        </li>
+                        <li class="date" data-date="Jan 2020-Now">
+                            <h1>WashU Engineering Tutor</h1>
+                            <p>Tutored students in Introduction to Computer Science and Matrix Algebra course for McKelvey School of Engineering at Washington University in St. Louis
+                            </p>
+                        </li>
+                        <li class="date" data-date="June 2020-Now">
+                            <h1>Mississippi State University,Summer Researcher</h1>
+                            <p>	
+                                Wrote Python scripts to enhance experience with Abaqus FEA finite element analysis software
+                                Coded in python to create Abaqus plug-in that creates contour plots from user elements   
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+
+        <!-- <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <h1>Contact</h1>
+                    <h6>Lets work together</h6>
+                </div>
+                <form action="">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                    <label for="subject">Subject: </label>
+                    <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section> -->
+    <!-- </div> -->
+    <footer class="copyright">
+        <!-- <a name="Contact"></a> -->
+        <div class="up" id="up">
+            <a href="#topOfPage"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <p>&copy; 2020 Jordan Stone</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
