@@ -9,7 +9,7 @@ html{
     font-size: 10px;
     font-family: Roboto, sans-serif;
     color: #eee;
-    background: #26143E;
+    /* background: #26143E; */
 }
 body{
     width: 100%;
@@ -311,6 +311,9 @@ small{
 /* End About */
 
 /* Start Portfolio */
+.portfolio-small{
+    display: none;
+}
 .portfolio{
     padding-top: 3rem;
 }
@@ -346,7 +349,7 @@ small{
     opacity: 0.3 ;
     padding-right: 10rem;
 }
-#weatherImg{
+#imcsImg{
     height: 265px;
     width: 348px;
     margin-left: 10rem;
@@ -533,18 +536,16 @@ input[type="submit"]:hover{
 @media(Max-width: 768px){
     header{
         height: 70vh;
-    }
-    body{
-
+        margin: 0 auto;
     }
     .landing-text h1{
-        font-size: 13rem;
+        font-size: 15rem;
     }
     .landing-text h6{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .stickyNav {
-        visibility: hidden;
+        display: none;
     }
     .nav-list{
         /* flex-direction: column; */
@@ -576,6 +577,22 @@ input[type="submit"]:hover{
     .about-details li{
         margin: 0 2rem;
     }
+    .portfolio{
+        display: none;
+    }
+    .portfolio-small .portfolio-item{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .portfolio-small .portfolio-description h6{
+        padding-right: 0;
+    }
+    .portfolio-small .portfolio-description p{
+        text-align: left;
+        text-indent: 2.5rem;
+        margin-bottom: 3rem;
+    }
     .timeline ul{
         /* margin: 0 0 0 auto; */
     }
@@ -585,8 +602,10 @@ input[type="submit"]:hover{
     .timeline .date::after{
         left: -5.9rem;
     }
-    #weatherImg{
+    #imcsImg{
         margin-left: 0;
+        width: 300px;
+        height: 229px;
     }
     #calcImg{
         margin-left: 5rem;
@@ -602,4 +621,53 @@ input[type="submit"]:hover{
         display: block;
         text-align: center;
     }
+    #calcImg{
+        height: 321px;
+        width: 150px;
+        margin-left: 0;
+        border-radius: 20px;
+    }
+    #calImg{
+        width: 300px;
+        height: 210px;
+        margin-left: 0;
+    }
+    .portfolio-small{
+        display: block;
+    }
+    .about-details{
+        
+    }
+    .about-details p{
+        text-align: left;
+        text-indent: 0;
+        padding-left: 2.5rem;
+    }
+    #bio{
+        text-indent: 3rem;
+    }
+}
+
+@media(Max-width: 450px){
+    .landing-text h1{
+        font-size: 10rem;
+    }
+    .timeline{
+        /* margin-left: 5rem; */
+        margin: 0;
+    }
+    .timeline ul{
+        margin: 0;
+    }
+    .timeline .date::before{
+        content: attr(data-date);
+        left: -19rem;
+        text-align: right;
+        min-width: 12rem;
+        font-size: 10px;
+    }
+    .about-details{
+        padding-right: 0;
+    }
+
 }

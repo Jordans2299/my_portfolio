@@ -74,15 +74,17 @@
                         <h1>About</h1>
                         <h6>Myself</h6>
                     </div>
-                    <p>
+                    <p id="bio">
                         My name is Jordan Stone and I am currently a Junior computer science student
                         at Washington University in St. Louis. I have strong interest in Full Stack
                         Web Development with Laravel and Vue being my primary frameworks.
-                        <br>
-                        <br>
+                    </p>
+                    <br>
+                    <p>
                         Computer Skills:  Java, Python, HTML, PHP, Javascript, MySQL, Laravel, CSS, Vue.js
-                        <br>
-                        <br>
+                    </p>
+                    <br>
+                    <p>
                         Relevant Courses: Rapid Prototype Development, Web Development, Data Structures and Algorithms, Intro to Data Science,
                         Matrix Algebra
                     </p>
@@ -177,6 +179,72 @@
                 </div>
             </div>
         </section>
+        <section class="portfolio-small" id="portfolio-small">
+            <div class="container">
+                <a name="Portfolio" class="pageLink"></a>
+                <div class="section-heading">
+                    <h1>Projects</h1>
+                    <h6>View some of my recent work</h6>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-description" id="weatherDesc">
+                        <h6>Web Development</h6>
+                        <a class="projLink" href="http://ec2-3-136-161-0.us-east-2.compute.amazonaws.com:3456/"><h1>Computer Science Forum Page</h1></a>
+                        <p>
+                            Forum website built for asking CS related questions. 
+                            Supports image uploading, CRUD operations, pagination, and user authentication. It 
+                            also allows for users to sort and search previously created posts. 
+                        </p>
+                        <div class="portfolio-img">
+                            <a href="http://ec2-3-136-161-0.us-east-2.compute.amazonaws.com:3456/"><img src="images/intramuralcs.png" id="imcsImg"></a>
+                        </div>
+                        <a href="#" class="cta">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+
+                    <div class="portfolio-description" id="calcDesc">
+                        <h6>Web Development</h6>
+                        <a class="projLink" href="http://ec2-3-136-161-0.us-east-2.compute.amazonaws.com/~jcstone/module5/calendar/"><h1>Ajax Calendar</h1></a>
+                        <p>
+                            Makes AJAX request to the server when logging in, signing up, 
+                            loggin out, and editing calendar events to update page in realtime.
+                        </p>
+                        <div class="portfolio-img">
+                            <a href="http://ec2-3-136-161-0.us-east-2.compute.amazonaws.com/~jcstone/module5/calendar/"><img src="images/calendar.png" id="calImg" alt=""></a>
+                        </div>
+                        <a href="https://github.com/Jordans2299/Ajax-Calendar" class="cta">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-description" id="flappyDesc">
+                        <h6>Java</h6>
+                        <h1>Flappy Bird Game</h1>
+                        <p>
+                            Simple Flappy Bird clone game built using Java
+                        </p>
+                        <div class="portfolio-img">
+                            <img src="images/FlappyClone.png" id="flappyImg" alt="#">
+                        </div>
+                        <a href="#" class="cta">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-description" id="calcDesc">
+                        <h6>App Development</h6>
+                        <h1>Calculator</h1>
+                        <p>
+                            Simple calculator app that supports basic math operations built using
+                            the Flutter Framework and Dart Programing Language
+                        </p>
+                        <div class="portfolio-img">
+                            <img src="images/Calculator.png" id="calcImg" alt="">
+                        </div>
+                        <a href="" class="cta">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="experience" id="experience">
             <div class="container">
@@ -208,7 +276,7 @@
                 </div>
         </section>
 
-        <!-- <section class="contact" id="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="section-heading">
                     <h1>Contact</h1>
@@ -224,7 +292,7 @@
                     <input type="submit" value="Submit">
                 </form>
             </div>
-        </section> -->
+        </section>
     <!-- </div> -->
     <footer class="copyright">
         <!-- <a name="Contact"></a> -->
