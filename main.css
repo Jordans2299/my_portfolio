@@ -669,5 +669,16 @@ input[type="submit"]:hover{
     .about-details{
         padding-right: 0;
     }
+    .about{
+        /* height: fit-content; */
+    }
+    .about .container{
+        padding-top: 0;
+    }
+
+    header{
+        height: 90vh;
+        margin-bottom: 2rem;
+    }
 
 }
