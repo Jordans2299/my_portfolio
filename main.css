@@ -649,6 +649,7 @@ input[type="submit"]:hover{
 }
 
 @media(Max-width: 450px){
+
     .landing-text h1{
         font-size: 10rem;
     }
