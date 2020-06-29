@@ -284,8 +284,12 @@ li{
     padding-right: 5rem;
 } 
 .about-details p{
-    text-indent: 5rem;
+    text-indent: 3rem;
     line-height: 2.5rem;
+}
+#noIndent{
+    text-indent: 0px;
+    font-size: 15px;
 }
 .social-media{
     margin-top: 5rem;
